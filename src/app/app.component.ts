@@ -19,11 +19,11 @@ export class AppComponent implements OnInit{
   }
 
 messagePresident () {
-  this.store.dispatch({type: 'ATHELETE'});               
+  this.store.dispatch({type: 'PRESIDENT'});               
 }
 
 messageAthlete () {
-  this.store.dispatch({type: 'ATHELETE'});
+  this.store.dispatch({type: 'ATHLETE'});
 }
 
 }
