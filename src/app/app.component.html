@@ -1,0 +1,21 @@
+
+<div style="text-align:center">
+
+
+
+
+  <div *ngIf="message$">
+
+    <h3>messages</h3>
+    <ul>
+      <li *ngFor="let message of message$ | async">
+        {{ message.text }}
+      </li>
+    </ul>
+  
+  </div>
+
+
+  <button (click)="messagePresident()">President says</button>
+  <button (click)="messageAthlete()">Athlete says</button>
+  
